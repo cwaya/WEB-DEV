@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>FORMS</h1>
+
+    <form action="/amber">
+        <p>
+            <label for="username">Enter Username</label>
+            <input type="text" placeholder="username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter Password</label>
+            <input type="password" placeholder="password" id="password" name="password">
+        </p>
+        <p>
+            <label for="num">Enter Unique Number</label>
+            <input type="number" id="num" name="num">
+        </p>
+
+        <button>Submit</button>
+    </form>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+
+    </form>
+
+    <form action="/demo">
+        <input type="checkbox" id="chk" name="chkb" value="agree">
+        <label for="chk">Check button</label>
+        <p>
+            <label for="s">Small</label>
+            <input type="radio" name="size" id="s" value="small">
+            <label for="m">Medium</label>
+            <input type="radio" name="size" id="m" value="medium">
+            <label for="l">Large</label>
+            <input type="radio" name="size" id="l" value="large">
+        </p>
+
+        <p>
+            <label for="team">Please choose team</label>
+            <select name="team" id="team">
+                <option value="milan">AC Milan</option>
+                <option value="juve">Juventus</option>
+                <option value="napoli">Napoli</option>
+                <option value="inter">Inter Milan</option>
+            </select>
+        </p>
+        <p>
+            <label for="score">Select Score</label>
+            <input type="range" name="score" id="score" min="0" max="100" value="0">
+
+        </p>
+
+        <p>
+            <label for="about">Tell us about you</label><br>
+            <textarea name="about" id="about" cols="50" rows="10" placeholder="type here" required
+                minlength="20"></textarea>
+
+        </p>
+
+        <button>Submit</button>
+
+    </form>
+</body>
+
+</html>
