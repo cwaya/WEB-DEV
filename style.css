@@ -1,0 +1,17 @@
+h1,
+h2 {
+    color: #f64c72;
+    text-align: center;
+    font-family: Arial, Verdana;
+
+}
+
+html {
+    background-color: #2f2fa2;
+    color: #ffffff;
+}
+
+button {
+    color: #ffffff;
+    background-color: #f64c72;
+}
