@@ -1,0 +1,60 @@
+h1 {
+    background-color: blue;
+    color: #f5f0ee;
+    font: lighter 1.8em courier New;
+    text-align: center;
+    border: 5px solid #264653;
+    width: 200px;
+    height: 10px;
+    padding: 0.7em;
+    margin: 20px auto;
+}
+
+h1:nth-of-type(2n) {
+    background-color: chocolate;
+}
+
+h1:nth-of-type(3n) {
+    background-color: darkred;
+}
+
+h1:nth-of-type(4n) {
+    background-color: #a62697;
+}
+
+section:first-of-type h1:nth-of-type(1) {
+    transform: rotate(40deg);
+
+}
+
+section:first-of-type h1:nth-of-type(2) {
+    transform: scale(0.5);
+}
+
+section:first-of-type h1:nth-of-type(3) {
+    transform: translateX(200px)
+}
+
+section:first-of-type h1:nth-of-type(4) {
+    transform: translate(-200px, -50px)
+}
+
+section:nth-of-type(2) h1:nth-of-type(1) {
+    transform: skew(-40deg)
+}
+
+section:nth-of-type(2) h1:nth-of-type(2) {
+    transform: skew(40deg, 5deg)
+}
+
+section:nth-of-type(2) {
+    transform: scale(0.7)
+}
+
+
+
+
+
+html {
+    margin-top: 100px;
+}
