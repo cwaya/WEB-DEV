@@ -15,7 +15,7 @@
 <body>
 
     <div class="container-md">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,8 +50,15 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></span>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -92,6 +99,51 @@
             <strong>HOLY COW !</strong> You should check in on your mail above.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+        <form action="#">
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="name@example.com" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" id="city" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-6">
+                    <label for="state">Select State</label>
+                    <select id="state" class="form-control">
+                        <option value="AN">Anambra</option>
+                        <option value="BN">Benue</option>
+                        <option value="LG">Lagos</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-3 col-6">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" class="form-control">
+                </div>
+            </div>
+            <div class="form-check form-group">
+                <input class="form-check-input" type="checkbox" value="chk" id="agreed">
+                <label class="form-check-label" for="agreed">
+                    I agree to Terms and Conditions
+                </label>
+            </div>
+            <button class="btn btn-success form-group" type="submit">Register<svg xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" class="bi bi-r-circle" viewBox="0 0 16 16">
+                    <path
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM5.5 4.002h3.11c1.71 0 2.741.973 2.741 2.46 0 1.138-.667 1.94-1.495 2.24L11.5 12H9.98L8.52 8.924H6.836V12H5.5V4.002Zm1.335 1.09v2.777h1.549c.995 0 1.573-.463 1.573-1.36 0-.913-.596-1.417-1.537-1.417H6.835Z" />
+                </svg></button>
+
+        </form>
+
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <img class="img-fluid" src="images/emile-seguin-R9OueKOtGGU-unsplash.jpg" alt="">
