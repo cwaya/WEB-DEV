@@ -41,4 +41,27 @@ $(document).ready(function () {
         }
     })
 
+    $('#product-slider2').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        autoplay: true,
+        dots: false,
+        navText: ["<i class='fa fa-caret-left'></i>", "<i class='fa fa-caret-right'></i>"],
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: false,
+                margin: 10,
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+
 })
