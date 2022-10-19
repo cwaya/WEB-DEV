@@ -63,6 +63,27 @@ h6 {
     width: 100%;
 }
 
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+.nav-item .dropdown-item:hover {
+    color: white;
+    background-color: #c66;
+}
+
+#contact.nav-item .dropdown-item:hover {
+    color: #000;
+    background-color: transparent;
+}
+
+#contact .dropdown-item .fa {
+    margin-right: 5px;
+}
+
+
 /* SLIDER */
 
 .slide-content {
